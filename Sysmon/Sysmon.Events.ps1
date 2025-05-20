@@ -188,7 +188,7 @@ function Get-DnsQueryEvents {
         EndTime         = $EndTime
         ProcessId       = $ProcessId
         ProcessGuid     = $ProcessGuid
-        EventIds        = 3
+        EventIds        = 22
         MaxEvents       = $MaxEvents
     }
 
