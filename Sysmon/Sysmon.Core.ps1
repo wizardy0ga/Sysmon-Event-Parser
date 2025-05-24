@@ -149,7 +149,7 @@ function Get-SysmonEvents {
         $XPathFilterProcessId   = "Event[EventData[Data[@Name='ProcessId']='$ProcessId']] or Event[EventData[Data[@Name='SourceProcessId']='$ProcessId']]"
     }
     if ($ProcessGuid) {
-        $XPathFilterProcessGuid = "Event[EventData[Data[@Name='ProcessGuid']='$ProcessGuid']] or Event[EventData[Data[@Name='SourceProcessGuid']='$ProcessGuid']]"
+        $XPathFilterProcessGuid = "Event[EventData[Data[@Name='ProcessGuid']='$ProcessGuid']] or Event[EventData[Data[@Name='SourceProcessGuid']='$ProcessGuid']] or Event[EventData[Data[@Name='ParentProcessGuid']='$ProcessGuid']]"
     }
 
     # Merge filters into a single xpath filter
